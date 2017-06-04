@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 30, 2017 11:41:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="uit.j2ee.been.User" table="User" catalog="jpayment" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="FirstName" length="50" not-null="true" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="LastName" length="100" not-null="true" />
+        </property>
+        <property name="dateOfBirth" type="date">
+            <column name="DateOfBirth" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="Email" length="100" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="50" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="500" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="32" not-null="true" />
+        </property>
+        <property name="userTypeId" type="java.lang.Integer">
+            <column name="UserTypeID" />
+        </property>
+        <property name="accessCount" type="java.lang.Integer">
+            <column name="AccessCount" />
+        </property>
+    </class>
+</hibernate-mapping>

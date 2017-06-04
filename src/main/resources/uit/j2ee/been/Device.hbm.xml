@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 30, 2017 11:41:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="uit.j2ee.been.Device" table="Device" catalog="jpayment" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="200" not-null="true" />
+        </property>
+        <property name="mac" type="string">
+            <column name="MAC" length="10" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="500" />
+        </property>
+        <property name="shopId" type="int">
+            <column name="ShopID" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

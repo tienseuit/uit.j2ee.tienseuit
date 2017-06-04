@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 30, 2017 11:41:14 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="uit.j2ee.been.PaymentHistory" table="PaymentHistory" catalog="jpayment" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="fromUserId" type="int">
+            <column name="FromUserID" not-null="true" />
+        </property>
+        <property name="toUserId" type="int">
+            <column name="ToUserID" not-null="true" />
+        </property>
+        <property name="subtotal" type="big_decimal">
+            <column name="Subtotal" precision="18" scale="4" not-null="true" />
+        </property>
+        <property name="detail" type="string">
+            <column name="Detail" length="500" />
+        </property>
+    </class>
+</hibernate-mapping>

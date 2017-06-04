@@ -1,0 +1,430 @@
+
+
+/* ----------------- list manager ---------------------------*/
+.lm-head .btn{
+    float: right;
+}
+
+/* ----------------- nav ---------------------------*/
+.path{
+    margin-top: 16px;
+}
+.path a{
+    cursor: pointer;
+    color: black;
+}
+.path>ul{
+    list-style-type: none;
+    padding-left: 50px;
+    background: linear-gradient(to right ,white, #f8f8f8 5%, #f8f8f8 95%,white);
+}
+.path>ul>li{
+    display: inline-block; 
+    padding: 14px 3px;
+}
+
+.path .dropdown > .dropdown-menu { 
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; 
+}
+.path .dropdown:hover > .dropdown-menu { 
+    display: block;
+} 
+
+
+/* ----------------- base popup ---------------------------*/
+.popup-base .popup-box{
+    border-radius: 4px;
+}
+
+.popup-base .panel-heading:first-child{
+    font-size: larger;
+}
+
+.popup-base .popup-base-bottom{
+    float: right;
+    background: transparent;
+    border: none;
+    /*    border-bottom-right-radius: 4px ;
+        border-bottom-left-radius: 4px ;*/
+}
+.popup-base .popup-base-button{
+    width: 80px;
+    margin: 0 5px;
+}
+
+.popup-base .popup-base-content{
+    background: white;
+    color: black;
+}
+
+.popup-base .panel-heading:first-child{
+    font-size: larger;
+}
+
+.popup-base-button:focus{
+    background: #dfdfdf;
+}
+
+.popup-base-type-info .popup-box{
+    background: darkgreen;
+    color: white;
+}
+
+.popup-base-type-warning .popup-box{
+    background: #da9700;
+    color: white;
+}
+
+.popup-base-type-error .popup-box{
+    background: #c40000;
+    color: white;
+}
+
+
+/* ----------------- popup ---------------------------*/
+.popup-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    outline: 0;
+    transition: .1s;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-box {
+    position: absolute;
+    background: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    transition: .1s;
+    max-height: 96%;
+    overflow: auto;
+    border-right-width: 2px;
+    padding: 0px 1px 1px 0px;
+    overflow-x: hidden;
+}
+
+.popup-box-md{
+    max-width: 1200px;
+    min-width: 700px;
+}
+
+.popup-box-sl{
+    top: 30%;
+    max-width: 750px;
+    min-width: 300px;
+}
+
+.popup-box-full-height{
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    overflow-y: auto;
+}
+
+.popup-input{
+    padding: 40px 40px 10px 40px;
+}
+.popup-input input{
+    margin: 10px 0 12px;
+}
+.popup-input-button{
+    margin: 10px;
+    width: 90px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .popup-box {
+        min-width: 90%;
+    }
+    .popup-box-sl {
+        min-width: 60%;
+    }
+}
+
+/* ----------------- link ---------------------------*/
+.link{
+    cursor: pointer;
+}
+
+/* ----------------- search ---------------------------*/
+.search-box{
+    padding: 0 !important;
+    position: relative;
+}
+
+.search-box ul{
+    position: absolute;
+    list-style-type: none;
+    margin-top: 0;
+    background-color: #FFF;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out 1s;
+    float: none;
+    z-index: 3000;
+    border: 1px #002a80 groove;
+    cursor: pointer;
+    width: 100%;
+}
+
+.search-box li{
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.search-box .search-item-selected{
+    background: #ebf2f9;
+}
+
+.search-component input {
+    witdth: 100%;
+}
+.search-box>button.search-component, .search-box>button.search-component:focus{
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    font-size: larger;
+    border: none;
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+
+/* ----------------- table form ---------------------------*/
+
+.table-form>tbody>tr:first-child>td{
+    border: none;
+}
+.table-form-action{
+    padding: 26px;
+    text-align: center;
+    background: gray;
+    margin: -16px;
+    background: linear-gradient(#ffffff, #f4f4f4, #dedede);
+}
+
+@media only screen and (min-width: 600px){
+    .table-form tr>td:first-child{
+        padding-left: 10%; 
+    }
+    .table-form tr>td:last-child{
+        padding-right: 10%; 
+    }
+}
+
+
+
+
+/* ----------------- panel ---------------------------*/
+
+.panel-heading > .btn{
+    font-size: medium;
+    padding-bottom: 7px;
+    padding-top: 5px;
+    margin-top: -4px;
+    float: right;
+}
+
+.panel-heading{
+    border-bottom: 4px solid #e5e3e3;
+}
+
+.heading-btn{
+    font-size: medium;
+    padding-bottom: 2px;
+}
+
+
+
+
+/* ----------------- custom bootstrap ---------------------------*/
+
+
+@media (min-width: 767px){ 
+    .dropdown:hover > .dropdown-menu { 
+        display: block;
+    }
+}
+
+nav ul{
+    transition: width 2s;
+}
+
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    vertical-align:middle;
+}
+
+
+/* ----------------- product ---------------------------*/
+.product{
+    float: left;
+    display: block;
+    width: 40%;
+    margin: 30px 5%;
+    border: green 3px inset;
+    border-radius: 8px;
+    padding: 5px;
+    position: relative;
+}
+.p-mainInfo{
+    display: block;
+    width: 100%;
+    height: 110px;
+}
+.product>.p-des{
+    margin-top: 10px;
+    vertical-align: middle;
+    display: table-cell;
+    height: 43px;
+}
+.p-mainInfo>.image{
+    width:45%;
+    height: 100%;
+    float:left;
+}
+.p-mainInfo>.image>img{ 
+    height: 100%;
+    width: 100%
+}
+.p-mainInfo>.p-info{
+    width: 50%;
+    display: block;
+    position: relative;
+    height: 100%;
+    margin-left: 5%;
+    float:left;
+} 
+.p-mainInfop-mainInfo>.p-info>a:hover{
+    text-decoration: none;
+}
+.p-mainInfo>.p-info>*{
+    cursor: pointer;
+    width: 100%;
+}
+.p-mainInfo>.p-info>.p-name{
+    font-size: x-large;
+}
+.p-mainInfo>.p-info>.p-price{
+    font-size: x-large;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: maroon;
+}
+
+.p-admin>ul{
+    float: right;
+    display: block;
+    background: white;
+    padding: 0;
+}
+.p-admin>ul>li{
+    display: block;
+    float: left;
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.p-admin>ul>li:first-child{ 
+    margin-right: 4px;
+}
+.p-admin{
+    top: 100%;
+    width: 100%;
+    margin-top: -10px;
+    position: absolute;
+}
+
+.p-admin>.p-info{ 
+    display: block;
+    float: left;
+    background: white;
+    padding: 5px;
+    margin-top: 6px;
+}
+
+
+
+
+
+/* ----------------- pos ---------------------------*/
+.col-xs-4{
+    height: 500px;
+}
+
+.bill{
+    background: #f5ebbf;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    padding-bottom: 156px;
+} 
+
+
+.bill-detail{
+    height: 100%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    padding-right: 31px;
+    margin-right: -15px;
+
+    padding-bottom: 22px;
+}
+
+.bill-pay{
+    position: absolute;
+    bottom: -4px;
+    height: 210px;
+    background: white;
+    left: 7px;
+
+    right: 0;
+}
+
+.product.selected{
+    background: #dfe8dd;
+}
+
+.bill-detail> .product{
+    width: 100%;
+}
+
+.load-failed .popup-base-button{
+    width: 113px;
+}
+
+.bill-pay > .subtotal{
+    margin: 0 40px 20px 40px;
+}
+
+.bill-pay > .pay-method .page{
+    text-align: center;
+}
+.bill-pay > .pay-method .page>.btn{
+    height: 58px;
+    width: 44%;
+    font-size: large;
+}
+.bill-pay>.btn-group{
+    position: absolute;
+    bottom: -6;
+    right:0;
+    left:0;
+
+}
+
+.bill-pay>.btn-group>.btn{
+    width: 50%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+}
